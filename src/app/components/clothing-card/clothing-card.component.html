@@ -1,0 +1,21 @@
+@if (clothing){
+<mat-card class="cloth-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{ clothing.title }}</mat-card-title>
+    <mat-card-subtitle class="subtitle">{{
+      clothing.subtitle
+    }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="clothing.imageLink" [alt]="clothing.title" />
+  <mat-card-content class="description">
+    <p>{{ clothing.description }}</p>
+  </mat-card-content>
+  <mat-card-actions class="price">
+    <b>R$ {{ clothing.price }}</b>
+    <button mat-icon-button>
+      <mat-icon> add_shopping_cart </mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
+}

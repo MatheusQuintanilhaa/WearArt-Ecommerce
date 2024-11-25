@@ -1,0 +1,27 @@
+.cloth-card {
+  max-width: 300px;
+}
+
+.subtitle {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.example-header-image {
+  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-size: cover;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
