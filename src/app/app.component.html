@@ -1,5 +1,13 @@
-<app-header></app-header>
+<app-header [drawer]="drawer"></app-header>
 
-<app-clothes-catalog></app-clothes-catalog>
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side">
+    <p>Auto-resizing sidenav</p>
+  </mat-drawer>
+
+  <div>
+    <app-clothes-catalog></app-clothes-catalog>
+  </div>
+</mat-drawer-container>
 
 <router-outlet />

@@ -1,4 +1,5 @@
 export interface Clothes {
+  id: number;
   title: string;
   subtitle: string;
   size: string;

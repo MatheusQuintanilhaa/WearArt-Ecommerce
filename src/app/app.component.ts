@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { HeaderComponent } from './components/header/header.component';
 import { ClothesCatalogComponent } from './pages/clothes-catalog/clothes-catalog.component';
@@ -7,9 +8,14 @@ import { ClothesCatalogComponent } from './pages/clothes-catalog/clothes-catalog
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, ClothesCatalogComponent],
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+    ClothesCatalogComponent,
+    MatSidenavModule,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'WearArt-ecommerce';

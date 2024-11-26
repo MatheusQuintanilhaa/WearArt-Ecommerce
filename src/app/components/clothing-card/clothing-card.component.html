@@ -12,7 +12,7 @@
     <p>{{ clothing.description }}</p>
   </mat-card-content>
   <mat-card-actions class="price">
-    <b>R$ {{ clothing.price }}</b>
+    <b>R$ {{ clothing.price | number : "1.2-2" }}</b>
     <button mat-icon-button>
       <mat-icon> add_shopping_cart </mat-icon>
     </button>
