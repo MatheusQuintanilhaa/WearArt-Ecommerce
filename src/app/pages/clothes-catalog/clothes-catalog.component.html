@@ -1,6 +1,9 @@
 <div class="container">
   @for(clothingObj of clothesArray; track clothingObj.id ) {
-  <app-clothing-card [clothing]="clothingObj"></app-clothing-card>
+  <app-clothing-card
+    [clothing]="clothingObj"
+    (warnClothesCatalog)="warnParentAboutItemAddition($event)"
+  ></app-clothing-card>
   } @empty {
   <h2>Não há roupas registradas no momento!</h2>
   }

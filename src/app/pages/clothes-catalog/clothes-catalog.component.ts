@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Clothes } from '../../models/clothes';
 import { ClothingCardComponent } from '../../components/clothing-card/clothing-card.component';
 
@@ -10,6 +10,8 @@ import { ClothingCardComponent } from '../../components/clothing-card/clothing-c
   styleUrl: './clothes-catalog.component.scss',
 })
 export class ClothesCatalogComponent {
+  @Output() warnApp: EventEmitter<Clothes> = new EventEmitter();
+
   clothesArray: Clothes[] = [
     {
       id: 1,
@@ -40,4 +42,10 @@ export class ClothesCatalogComponent {
         'Estampa desenvolvida para estúdios, vendida para Use Marine',
     },
   ];
+
+  warnParentAboutItemAddition(clothing: Clothes) {
+    console.log(`Este item esta sendo selecionado ${clothing.title}`);
+
+    this.warnApp.emit(clothing);
+  }
 }

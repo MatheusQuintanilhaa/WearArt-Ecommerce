@@ -6,4 +6,5 @@ export interface Clothes {
   imageLink: string;
   price: number;
   description: string;
+  availableInStock?: number;
 }

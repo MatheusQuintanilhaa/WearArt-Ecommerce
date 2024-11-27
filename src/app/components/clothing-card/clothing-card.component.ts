@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MatButtonModule } from '@angular/material/button';
@@ -26,4 +26,10 @@ export class ClothingCardComponent {
     price: 0,
     description: `Mussum Ipsum, cacilds vidis litro abertis. Mé faiz elementum girarzis.`,
   };
+  @Output() warnClothesCatalog: EventEmitter<Clothes> = new EventEmitter();
+
+  warnParentAboutItemAddition(clothing: Clothes) {
+    console.log(`Avisa que selecionei o ${clothing.title}`);
+    this.warnClothesCatalog.emit(clothing);
+  }
 }

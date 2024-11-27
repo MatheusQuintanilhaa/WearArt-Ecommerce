@@ -13,7 +13,7 @@
   </mat-card-content>
   <mat-card-actions class="price">
     <b>R$ {{ clothing.price | number : "1.2-2" }}</b>
-    <button mat-icon-button>
+    <button mat-icon-button (click)="warnParentAboutItemAddition(clothing)">
       <mat-icon> add_shopping_cart </mat-icon>
     </button>
   </mat-card-actions>
