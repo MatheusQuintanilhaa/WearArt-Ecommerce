@@ -1,0 +1,56 @@
+{
+  "games": [
+    {
+      "id": "1",
+      "title": "Papú",
+      "subtitle": "Expressa sua personalidade com estilo.",
+      "imageLink": "./src/assets/estampa1.jpg",
+      "price": 59.9,
+      "description": "Estampa desenvolvida para estúdios, vendida para Papú.",
+      "availableInStock": 8
+    },
+    {
+      "id": "2",
+      "title": "Blessrio",
+      "subtitle": "Expressa sua personalidade com individualidade.",
+      "imageLink": "./src/assets/estampa2.jpg",
+      "price": 123.9,
+      "description": "Estampa desenvolvida para estúdios, vendida para Blessrio",
+      "availableInStock": 5
+    },
+    {
+      "id": "3",
+      "title": "Use Marine",
+      "subtitle": "Expressa sua personalidade .",
+      "imageLink": "./src/assets/estampa3.jpg",
+      "price": 198.45,
+      "description": "Estampa desenvolvida para estúdios, vendida para Use Marine",
+      "availableInStock": 10
+    },
+    {
+      "id": "4",
+      "title": "Impretex",
+      "subtitle": "Expressa sua identidade .",
+      "imageLink": "./src/assets/estampa4.jpg",
+      "price": 200.9,
+      "description": "Estampa desenvolvida para estúdios, vendida para Impretex",
+      "availableInStock": 25
+    },
+    {
+      "id": "5",
+      "title": "AD",
+      "subtitle": "Inovando com autoridade .",
+      "imageLink": "./src/assets/estampa5.jpg",
+      "price": 300.9,
+      "description": "Estampa desenvolvida para estúdios, vendida para AD",
+      "availableInStock": 25
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123"
+    }
+  ]
+}
