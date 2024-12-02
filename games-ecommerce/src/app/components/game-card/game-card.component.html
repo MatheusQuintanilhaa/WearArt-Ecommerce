@@ -1,0 +1,22 @@
+@if (game){
+    <mat-card class="game-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title>{{ game.title }}</mat-card-title>
+          <mat-card-subtitle>for {{ game.platform }}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="{{ game.imageLink }}" alt="Photo of {{ game.title }} game">
+        <mat-card-content>
+            <b>{{ game.price }}</b>
+            <p>
+                {{ game.description }}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-icon-button (click)="addGameToCart(game)">
+                <mat-icon>
+                    add_shopping_cart
+                </mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+}
