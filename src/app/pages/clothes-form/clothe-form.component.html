@@ -1,0 +1,55 @@
+<form [formGroup]="clotheForm" (ngSubmit)="submitForm()">
+  <h3>Add new clothe to Catalog</h3>
+  <mat-form-field appearance="fill">
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title" />
+    <mat-error>Title is required</mat-error>
+    <mat-error>Maximum 50 characters allowed</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Subtitle</mat-label>
+    <input matInput formControlName="subtitle" />
+    <mat-error>Subtitle is required</mat-error>
+    <mat-error>Maximum 50 characters allowed</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Brand</mat-label>
+    <input matInput formControlName="brand" />
+    <mat-error>Brand is required</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Image Link</mat-label>
+    <input matInput formControlName="imageLink" />
+    <mat-error>Image link is required</mat-error>
+    <mat-error>Enter a valid URL</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Price</mat-label>
+    <input matInput type="number" formControlName="price" />
+    @if(clotheForm.get('price')?.hasError('required')) {
+    <mat-error>Price is required</mat-error>
+    } @if(clotheForm.get('price')?.hasError('min')) {
+    <mat-error>Price must be a positive number</mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea matInput formControlName="description"></textarea>
+    <mat-error>Description is required</mat-error>
+    <mat-error>Maximum 300 characters allowed</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Available in Stock</mat-label>
+    <input matInput type="number" formControlName="availableInStock" />
+    <mat-error>Stock amount is required</mat-error>
+    <mat-error>Stock must be a positive number</mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">Submit</button>
+</form>

@@ -1,0 +1,7 @@
+<div class="container">
+  @for(clotheObj of clothesArray; track clotheObj.id) {
+  <app-clothing-card [clothes]="clotheObj"></app-clothing-card>
+  } @empty {
+  <h2>Não há roupas registradas no momento!</h2>
+  }
+</div>

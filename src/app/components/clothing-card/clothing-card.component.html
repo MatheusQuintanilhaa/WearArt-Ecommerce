@@ -1,0 +1,30 @@
+@if (clothes){
+<mat-card class="clothe-card" appearance="outlined">
+  <mat-card-header>
+    <mat-card-title>{{ clothes.title }}</mat-card-title>
+    <mat-card-subtitle> {{ clothes.subtitle }}</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    [src]="
+      isExternalImage(clothes.imageLink)
+        ? clothes.imageLink
+        : 'assets/' + clothes.imageLink
+    "
+    alt="Photo of {{ clothes.title }} clothe"
+  />
+
+  <mat-card-content>
+    <b>R$ {{ clothes.price | number : "1.2-2" }}</b>
+
+    <p>
+      {{ clothes.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-icon-button (click)="addClotheToCart(clothes)">
+      <mat-icon> add_shopping_cart </mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
+}
