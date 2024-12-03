@@ -37,34 +37,14 @@
       "availableInStock": 25
     },
     {
-      "id": "393a",
-      "title": "Farm rio ",
-      "subtitle": "",
-      "brand": "Teste",
-      "imageLink": "https://lojavivavida.vteximg.com.br/arquivos/ids/230386-500-750/Vestido-curto-rio-de-cor-Farm.png?v=638373182579230000",
-      "price": 122,
-      "description": "Testando o vestido",
-      "availableInStock": 122
-    },
-    {
-      "id": "8d42",
-      "title": "Impretex",
-      "subtitle": "Farm rio",
-      "brand": "farm",
-      "imageLink": "https://images.tcdn.com.br/img/img_prod/1080420/vestido_curto_mandalina_farm_46950_1_1d18567ffc266df494125e1639950130.jpg",
-      "price": 322,
-      "description": "testando",
-      "availableInStock": 233
-    },
-    {
-      "id": "623d",
-      "title": "teste",
-      "subtitle": "dqwdwq",
-      "brand": "farm",
-      "imageLink": "https://images.tcdn.com.br/img/img_prod/723221/vestido_cropped_floral_pintado_farm_9977_1_82d2851c28737f8e9c418dd290629ec3.jpg",
-      "price": 122,
-      "description": "dwqdqwdqw",
-      "availableInStock": 223
+      "id": "3aa5",
+      "title": "vestido",
+      "subtitle": "dwqdqwdwq",
+      "brand": "farm ",
+      "imageLink": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-lulbwr8xsqcl35",
+      "price": 344,
+      "description": "jhbhgbhgbhj",
+      "availableInStock": 889
     }
   ],
   "users": [

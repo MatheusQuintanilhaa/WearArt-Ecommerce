@@ -8,6 +8,8 @@ import { MatCardModule } from '@angular/material/card';
 import { Clothes } from '../../models/clothes';
 import { CartService } from '../../services/cart.service';
 
+import { CartItem } from '../../models/cart-item';
+
 @Component({
   selector: 'app-clothing-card',
   standalone: true,
@@ -42,4 +44,9 @@ export class ClothingCardComponent {
     // chamar o método do service responsável por adicionar uma roupa ao carrinho
     this.cartService.addItemToCart(clothes);
   }
+
+  // removeItem(clothes: Clothes) {
+  //   this.cartService.removeItemFromCart(clothes);
+  //   console.log(`Removi a roupa ${clothes.title} do carrinho!`);
+  // }
 }

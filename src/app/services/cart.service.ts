@@ -109,4 +109,36 @@ export class CartService {
       this.addItem(this.cartItemsArray[index]);
     }
   }
+
+  // removeItemFromCart(clothes: Clothes) {
+  //   const index = this.getItemById(clothes.id);
+
+  //   if (index !== -1) {
+  //     const cartItem = this.cartItemsArray[index];
+
+  //     // Se a quantidade for maior que 1, reduzimos a quantidade
+  //     if (cartItem.quantity > 1) {
+  //       cartItem.quantity--;
+
+  //       // Subtraímos o preço do item do totalPrice
+  //       this.totalPrice.update((previousValue: number) => {
+  //         return previousValue - clothes.price;
+  //       });
+  //     } else {
+  //       // Caso contrário, removemos o item completamente do carrinho
+  //       this.cartItemsArray.splice(index, 1);
+
+  //       // Subtraímos o preço do item do totalPrice
+  //       this.totalPrice.update((previousValue: number) => {
+  //         return previousValue - clothes.price;
+  //       });
+  //     }
+
+  //     // Atualiza o localStorage com o novo carrinho
+  //     localStorage.setItem(
+  //       'cartItemsArray',
+  //       JSON.stringify(this.cartItemsArray)
+  //     );
+  //   }
+  // }
 }
