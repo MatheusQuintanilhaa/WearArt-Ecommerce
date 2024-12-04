@@ -14,7 +14,7 @@ export class ClotheService {
     this.http = inject(HttpClient);
   }
 
-  getAllGames() {
+  getAllClothes() {
     return this.http.get<Clothes[]>('http://localhost:3000/clothes');
   }
 

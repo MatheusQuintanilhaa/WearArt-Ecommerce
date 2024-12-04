@@ -18,8 +18,8 @@ export class ClothesCatalogComponent {
   constructor() {
     this.clothesService = inject(ClotheService);
 
-    this.clothesService.getAllGames().subscribe((gamesArray: Clothes[]) => {
-      this.clothesArray = gamesArray;
+    this.clothesService.getAllClothes().subscribe((clothesArray: Clothes[]) => {
+      this.clothesArray = clothesArray;
     });
   }
 }

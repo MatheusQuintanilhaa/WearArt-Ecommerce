@@ -48,11 +48,17 @@ export class ClotheFormComponent {
     });
   }
 
+  // Move the isExternalImage function outside of submitForm method
   isExternalImage(url: string): boolean {
     return url.startsWith('http://') || url.startsWith('https://');
   }
 
   submitForm() {
+    if (this.clotheForm.invalid) {
+      this.snackBar.open('Formulário possui campos inválidos!', 'Fechar');
+      return;
+    }
+
     console.log('Formulário foi submetido!');
     console.log(this.clotheForm.value);
 
